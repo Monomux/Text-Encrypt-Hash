@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h2 id="Title">Text Encrypt/Hash</h2>
+    <input type="radio" id="EDRadio" name="EHType" checked="checked">Encrypt/Decrypt
+    <input type="radio" id="HRadio" name="EHType">Hash<br>
+    <text id>Text</text><br>
+    <textarea id="DecryptedText"></textarea><br>
+    <button id="EncryptBtn" type="button">Encrypt</button><br>
+    <label>Type</label>
+    <select id="EncryptType" class="area1">
+      <option value="base64">base64</option>
+      <option value="aes">aes</option>
+      <option value="des">des</option>
+      <option value="tripledes">tripledes</option>
+      <option value="rc4">rc4</option>
+      <option value="rabbit">rabbit</option>
+      <option value="rabbit-legacy">rabbit-legacy</option>
+    </select>
+    <select id="HashType">
+      <option value="md5">md5</option>
+      <option value="sha1">sha1</option>
+      <option value="sha256">sha256</option>
+      <option value="sha224">sha224</option>
+      <option value="sha512">sha512</option>
+      <option value="sha384">sha384</option>
+      <option value="sha3">sha3</option>
+      <option value="ripemd160">ripemd160</option>
+      <option value="hmac-md5">hmac-md5</option>
+      <option value="hmac-sha1">hmac-sha1</option>
+      <option value="hmac-sha256">hmac-sha256</option>
+      <option value="hmac-sha224">hmac-sha224</option>
+      <option value="hmac-sha512">hmac-sha512</option>
+      <option value="hmac-sha384">hmac-sha384</option>
+      <option value="hmac-sha3">hmac-sha3</option>
+      <option value="hmac-ripemd160">hmac-ripemd160</option>
+    </select><br>
+    <label id="KeyLabel">Key</label>
+    <input id="key" class="area1"><br>
+    <text id="text2">Encrypted</text><br>
+    <textarea id="EncryptedText"></textarea><br>
+    <button id="DecryptBtn" type="button">Decrypt</button><br>
+
+    <script src="../crypto-js/core.js" type="text/javascript"></script>
+    <script src="../crypto-js/x64-core.js" type="text/javascript"></script>
+    <script src="../crypto-js/md5.js" type="text/javascript"></script>
+    <script src="../crypto-js/evpkdf.js" type="text/javascript"></script>
+    <script src="../crypto-js/lib-typedarrays.js" type="text/javascript"></script>
+    <script src="../crypto-js/enc-base64.js" type="text/javascript"></script>
+    <script src="../crypto-js/cipher-core.js" type="text/javascript"></script>
+    <script src="../crypto-js/aes.js" type="text/javascript"></script>
+    <script src="../crypto-js/rabbit.js" type="text/javascript"></script>
+    <script src="../crypto-js/rabbit-legacy.js" type="text/javascript"></script>
+    <script src="../crypto-js/tripledes.js" type="text/javascript"></script>
+    <script src="../crypto-js/rc4.js" type="text/javascript"></script>
+    <script src="../crypto-js/hmac.js" type="text/javascript"></script>
+    <script src="../crypto-js/sha1.js" type="text/javascript"></script>
+    <script src="../crypto-js/sha3.js" type="text/javascript"></script>
+    <script src="../crypto-js/sha256.js" type="text/javascript"></script>
+    <script src="../crypto-js/sha224.js" type="text/javascript"></script>
+    <script src="../crypto-js/sha512.js" type="text/javascript"></script>
+    <script src="../crypto-js/sha384.js" type="text/javascript"></script>
+    <script src="../crypto-js/ripemd160.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
